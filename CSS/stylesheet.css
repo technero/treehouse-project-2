@@ -19,13 +19,13 @@ header {
 .student-intro {
   display: flex;
   flex-direction: column-reverse;
-  margin: 40px 0px 30px;
+  margin: 40px 0px 40px;
 }
 
 .student-intro > p {
-  margin: 10px;
+  margin: 0 10px;
+  padding: 0 10px;
   text-align: center;
-  padding: 10px;
 }
 
 
@@ -51,7 +51,7 @@ header {
 .profile-pic {
   width: 200px;
   display: block;
-  margin: auto;
+  margin: 0 auto 20px;
 }
 
 h2 { 
@@ -143,6 +143,7 @@ h4 {
 
 a:link {
   text-decoration: none;
+  color: black;
 }
 
 a:visited {
@@ -177,20 +178,18 @@ font-family: 'Luxurious Roman', cursive;
     background-color: rgb(247, 247, 247);
   }
 
-  .student-intro {
-    flex-direction: row;
-    gap: 20px;
-  }
-
-  .student-intro >p {
+  .student-intro > p {
     text-align: left;
     font-size: 18px;
     margin: 0;
     padding: 0;
   }
 
-  .profile-pic{
+  .profile-pic {
     width: 300px;
+    float: right;
+    display: inline;
+    margin-left: 20px;
   }
 
   header {
@@ -270,13 +269,11 @@ font-family: 'Luxurious Roman', cursive;
   }
 
   .student-intro {
-   flex-direction: row;
     font-size: 22px;
   }
 
   .profile-pic {
     margin-left: 20px;
-    float:right;
     width: 420px;
     display: block;
   }
